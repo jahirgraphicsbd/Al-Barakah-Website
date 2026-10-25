@@ -338,6 +338,136 @@ footer p {
     margin: 12px 0;
 }
 
+/* Stationery Page Design */
+.stationery-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.page-description {
+    font-size: 17px;
+    color: #4b5563;
+    margin-bottom: 30px;
+}
+
+
+/* Stationery Product Card */
+.stationery-card {
+    max-width: 350px;
+    margin: 0 auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.stationery-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.stationery-card h3 {
+    color: #111827;
+    font-size: 23px;
+    margin-top: 18px;
+}
+
+
+/* Back to Home Button */
+.back-home-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 22px;
+    background-color: #111827;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background-color: #fbbf24;
+    color: #111827;
+    transform: translateY(-2px);
+}
+/* Only Stationery Page Product Grid */
+.stationery-page .product-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 12px;
+}
+/* Stationery Page: Smaller Card Text */
+
+.stationery-page .stationery-card h3 {
+    font-size: 16px;
+    margin: 10px 5px;
+}
+
+.stationery-page .stationery-card p {
+    font-size: 13px;
+    margin: 6px 5px;
+    line-height: 1.4;
+}
+
+.stationery-page .stationery-card .product-price {
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Compact Stationery Card */
+.stationery-page .stationery-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stationery-page .stationery-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.stationery-page .stationery-card h3 {
+    margin: 8px 4px;
+    padding: 0;
+}
+
+.stationery-page .stationery-card p {
+    margin: 5px 4px;
+    padding: 0;
+}
+/* Stationery Card Frame */
+.stationery-page .stationery-card {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px #e5e7eb,
+                0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Stationery Image */
+.stationery-page .stationery-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
 @media (max-width: 600px) {
 
     nav {
@@ -417,5 +547,65 @@ footer p {
     padding: 20px 10px;
     }   
 
+/* Center Stationery Card on Mobile */
+    .stationery-page .product-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .stationery-page .stationery-card {
+        width: 100%;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stationery-page .product-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+    /* Stationery Page: Mobile Grid Fix */
+
+    .stationery-page .product-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        width: 100%;
+    }
+
+    .stationery-page .stationery-card {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .stationery-page .stationery-card img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+    /* Equal Height Cards on Stationery Page */
+    .stationery-page .stationery-card {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .stationery-page .stationery-card h3 {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .stationery-page .stationery-card p {
+    min-height: 34px;
+    }
+
 }
-    
+
